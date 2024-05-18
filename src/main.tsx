@@ -1,14 +1,7 @@
 import { render } from "preact";
+import { App } from "./App";
 
-const App = () => {
-  return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
-  );
-};
-
-const root = document.createElement("div");
-document.body.appendChild(root);
+// biome-ignore lint/style/noNonNullAssertion: index.html always has a root element
+const root = document.getElementById("app")!;
 
 render(<App />, root);
