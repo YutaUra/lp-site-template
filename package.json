@@ -1,6 +1,24 @@
 {
   "name": "lp-site-template",
   "private": true,
-  "scripts": {},
-  "packageManager": "pnpm@9.1.1"
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "packageManager": "pnpm@9.1.1",
+  "dependencies": {
+    "preact": "10.22.0",
+    "react": "npm:@preact/compat@17.1.2",
+    "react-dom": "npm:@preact/compat@17.1.2"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "2.8.2",
+    "@tsconfig/strictest": "2.0.5",
+    "@types/react": "18.3.2",
+    "@types/react-dom": "18.3.0",
+    "typescript": "5.4.5",
+    "vite": "5.2.11"
+  }
 }
