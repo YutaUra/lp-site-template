@@ -1,6 +1,10 @@
 node_modules
 dist
 .storycap/actual
+.storycap/diff
 reg.json
 
 *storybook.log
+## Panda
+styled-system
+styled-system-studio

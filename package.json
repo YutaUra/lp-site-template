@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "prepare": "panda codegen",
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
@@ -10,7 +11,7 @@
     "build-storybook": "storybook build",
     "storycap": "rimraf .storycap/actual && storycap --serverCmd 'pnpm run storybook --ci' http://localhost:6006 -o .storycap/actual",
     "storycap:test": "reg-cli .storycap/actual .storycap/expected .storycap/diff -R .storycap/index.html",
-    "storycap:report": "http-server .storycap",
+    "storycap:report": "http-server -c-1 .storycap",
     "storycap:accept": "rimraf .storycap/expected && mv .storycap/actual .storycap/expected"
   },
   "packageManager": "pnpm@9.1.1",
@@ -22,6 +23,7 @@
   "devDependencies": {
     "@biomejs/biome": "1.7.3",
     "@chromatic-com/storybook": "^1.4.0",
+    "@pandacss/dev": "0.39.1",
     "@preact/preset-vite": "2.8.2",
     "@storybook/addon-essentials": "8.1.1",
     "@storybook/addon-interactions": "8.1.1",

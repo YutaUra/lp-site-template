@@ -20,12 +20,12 @@
         "noForEach": "off"
       }
     },
-    "ignore": ["node_modules", "dist"]
+    "ignore": ["node_modules", "dist", "styled-system"]
   },
   "formatter": {
     "enabled": true,
     "indentStyle": "space",
     "indentWidth": 2,
-    "ignore": ["node_modules", "dist"]
+    "ignore": ["node_modules", "dist", "styled-system"]
   }
 }

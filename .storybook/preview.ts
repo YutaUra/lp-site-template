@@ -1,9 +1,11 @@
+import "../src/index.css";
 import type { Preview } from "@storybook/preact";
 import { type ScreenshotOptions, withScreenshot } from "storycap";
 
 const preview: Preview = {
   decorators: [withScreenshot()],
   parameters: {
+    layout: "fullscreen",
     controls: {
       matchers: {
         color: /(background|color)$/i,
