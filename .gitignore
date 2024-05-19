@@ -2,6 +2,7 @@ node_modules
 dist
 .storycap/actual
 .storycap/diff
+.storycap/index.html
 reg.json
 
 *storybook.log
