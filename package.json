@@ -7,7 +7,11 @@
     "build": "vite build",
     "serve": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "storycap": "rimraf .storycap/actual && storycap --serverCmd 'pnpm run storybook --ci' http://localhost:6006 -o .storycap/actual",
+    "storycap:test": "reg-cli .storycap/actual .storycap/expected .storycap/diff -R .storycap/index.html",
+    "storycap:report": "http-server .storycap",
+    "storycap:accept": "rimraf .storycap/expected && mv .storycap/actual .storycap/expected"
   },
   "packageManager": "pnpm@9.1.1",
   "dependencies": {
@@ -29,8 +33,13 @@
     "@tsconfig/strictest": "2.0.5",
     "@types/react": "18.3.2",
     "@types/react-dom": "18.3.0",
+    "http-server": "14.1.1",
     "preact-render-to-string": "6.4.2",
+    "puppeteer": "22.9.0",
+    "reg-cli": "0.18.5",
+    "rimraf": "5.0.7",
     "storybook": "8.1.1",
+    "storycap": "5.0.0",
     "typescript": "5.4.5",
     "vite": "5.2.11"
   }

@@ -1,4 +1,6 @@
 node_modules
 dist
+.storycap/actual
+reg.json
 
 *storybook.log
