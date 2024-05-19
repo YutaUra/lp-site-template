@@ -1,0 +1,3 @@
+# vrt test
+pnpm run storycap
+pnpm run storycap:test || (pnpm run storycap:report; exit 1)
