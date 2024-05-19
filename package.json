@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "packageManager": "pnpm@9.1.1",
   "dependencies": {
@@ -15,11 +17,20 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.7.3",
+    "@chromatic-com/storybook": "^1.4.0",
     "@preact/preset-vite": "2.8.2",
+    "@storybook/addon-essentials": "8.1.1",
+    "@storybook/addon-interactions": "8.1.1",
+    "@storybook/addon-links": "8.1.1",
+    "@storybook/blocks": "8.1.1",
+    "@storybook/preact": "8.1.1",
+    "@storybook/preact-vite": "8.1.1",
+    "@storybook/test": "8.1.1",
     "@tsconfig/strictest": "2.0.5",
     "@types/react": "18.3.2",
     "@types/react-dom": "18.3.0",
     "preact-render-to-string": "6.4.2",
+    "storybook": "8.1.1",
     "typescript": "5.4.5",
     "vite": "5.2.11"
   }
